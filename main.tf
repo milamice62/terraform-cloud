@@ -1,9 +1,9 @@
 provider "aws" {
-  region = var.region[0]
+  region = var.region[1]
 }
 
 resource "aws_instance" "example" {
-  ami           = var.ami[0]
+  ami           = var.ami[var.region[1]]
   instance_type = "t2.micro"
 }
 
