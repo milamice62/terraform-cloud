@@ -1,3 +1,13 @@
+# terraform {
+#   backend "remote" {
+#     organization = "InstantBrands"
+
+#     workspaces {
+#       name = "Test"
+#     }
+#   }
+# }
+
 provider "aws" {
   region = var.region[1]
 }
