@@ -1,4 +1,4 @@
 variable "region" {
-  type        = string
+  type        = list
   description = "The region of deployment in AWS"
 }
