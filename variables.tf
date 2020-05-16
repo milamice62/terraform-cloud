@@ -1,9 +1,9 @@
 variable "region" {
-  type        = list
+  type        = list(string)
   description = "The region of deployment in AWS"
 }
 
 variable "ami" {
-  type        = list
+  type        = list(string)
   description = "AMI id selected for EC2 instance"
 }
