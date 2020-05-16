@@ -4,6 +4,6 @@ variable "region" {
 }
 
 variable "ami" {
-  type        = list(string)
+  type        = map(string)
   description = "AMI id selected for EC2 instance"
 }
